@@ -103,6 +103,8 @@ class Translit implements \Zend_Filter_Interface
         'Ę' => 'e',
         'ę' => 'e',
         'Ě' => 'e',
+        'ẽ' => 'e',
+        'Ẽ' => 'e',
         'ě' => 'e',
         'Ĝ' => 'g',
         'ĝ' => 'g',
