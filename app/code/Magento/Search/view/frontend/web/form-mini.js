@@ -82,7 +82,7 @@ define([
                 }
             }.bind(this));
 
-            this.element.on('blur', $.proxy(function () {
+            this.element.parent().on('mouseleave', $.proxy(function () {
                 if (!this.searchLabel.hasClass('active')) {
                     return;
                 }
@@ -98,7 +98,7 @@ define([
                 }, this), 250);
             }, this));
 
-            this.element.trigger('blur');
+            this.element.trigger('mouseleave');
 
             this.element.on('focus', this.setActiveState.bind(this, true));
             this.element.on('keydown', this._onKeyDown);
